@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>图片标签</title>
+    </head>
+    <style>
+       .tx {
+        max-width: 10%;
+        height: auto;
+        }
+    </style>
+    <body>
+        1.将整个图片设置为超链接<p/>
+        <a href="http://xiazhimiao.gitee.io/">
+            <img src="../img/头像.png" alt="头像" class="tx">
+        </a>
+        <p>2.设置图片的热点区域</p>
+        <img src="../img/头像.png" alt="头像" width="100" height="100" usemap="#mymap">
+        <map name="mymap">
+            <area shape="rect" coords="0,0,100,50" href="http://baidu.com/">
+            <area shape="rect" coords="0,50,100,100" href="http://xiazhimiao.gitee.io/">
+        </map>
+
+    </body>
+</html>
+<!--
+img属性：
+    src：图片文件路径
+    alt：提示文本
+    height：图片高度
+    width：图片宽度.可以使用像素或者百分数，如果是百分数则是相对于窗口的比例
+图片热点：
+    img的usemap属性：
+        指定一个map标签，前面需要加上#号
+    map标签：
+        name属性：名称
+    area标签：
+        shape属性：
+            1.rect：矩形区域，coords值为x1，y1，x2，y2，规定为矩形左上角（x1，y1）和矩形右下角（x2，y2）的坐标
+            2.circle：圆形区域，coords值为x，y，z，其中z代表圆的半径
+            3.poly：指定多边形各边的坐标，coords的值为x1，y1，x2，y2，...，xn，yn，其中x1，y1为多边形第一个顶点的坐标。因为html中多边形必须是闭合的，所以不需要把第一个顶点重新写一遍
+        coords属性：
+            因shape属性而变换
+        href属性：
+            url
+            格式：http://xxxx.xx//
+            如果写成xxxx.cn，而不加http的话，就相当于在当前路径底下寻找文件，而非指向到指定目标网站
+            当然，如果是其他书签等作用完全可以
+
+
+
+
+
+
+
+
+-->
