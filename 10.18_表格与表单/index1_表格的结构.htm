@@ -6,15 +6,20 @@
     </head>
     <body>
         <table border="2" width="300">
-            <caption>表格的结构</caption>
-            <thead>
+            <colgroup>
+                <col style="background-color: yellow;">
+                <col style="background-color: cyan;">
+                <col style="background-color: pink;">
+              </colgroup>
+            <caption>表格的结构</caption><!--表格标题-->
+            <thead><!--表头-->
                 <tr>
-                    <th>表头</th>
+                    <th>表头</th><!--与td作用类似-->
                     <th>通过</th>
                     <th>th</th>
                 </tr>
             </thead>
-            <tfoot>
+            <tfoot><!--表尾-->
                 <tr>
                     <td colspan="3" align="center">这里是表尾</td>
                 </tr>
@@ -29,3 +34,7 @@
         </table>
     </body>
 </html>
+<!--
+    表头和表尾在一张表格里只能有一个，而<tbody>可以有多个
+    colgroup：列分组，通过clo为每一列设置属性
+-->
