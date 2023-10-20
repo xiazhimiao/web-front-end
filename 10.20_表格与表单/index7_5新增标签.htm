@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>day7</title>
+    </head>
+    <body>
+        <label for="txt_ide">请输入你看过的动漫</label>
+        <input type="text" id="txt_ide" list="ide" />
+        <datalist id="ide">
+            <option value="喜羊羊" >
+            <option value="神奇宝贝" >
+            <option value="熊出没" >
+            <option value="西游记" >
+            <option value="斗魂大陆" >
+            <option value="猪八戒" >
+            <option value="米老鼠" >
+        </datalist>
+
+        <br/>出生年月：
+        <input type="datetime-local" name="birthmonth" value="2004-10-10 00:00" min="2000-10-10 00:00" max="2024-10-10 00:00">
+        <br>选择你喜欢的颜色：
+        <input type="color" value="#00ff00" name="likeColor">
+        <br>按钮
+        <button onclick="alert('666');window.open('http://xiazhimiao.gitee.io/')"></button>
+        <br>datails
+         <details open>
+            <summary>显示在线用户</summary>
+            <ui>
+                <li><img src="../img/头像.png" alt="toux" height="100"></li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+            </ui>
+         </details> 
+         <br>
+         下载进度：<progress value="22" max="100"></progress>22/100
+         <p>
+            <strong>注意：</strong>
+            ie 9或者更早版本的ie浏览器不支持progress标签。
+         </p>
+         <br>空间剩余大小：
+         <meter min="0" max="1024" value="600">600/1024</meter>600/1024GB
+         <p>你的得分是：
+            <meter min="0" max="100" low="60" high="90" optimum="100" value="91">91</meter>91分
+         </p>
+    </body>
+</html>
